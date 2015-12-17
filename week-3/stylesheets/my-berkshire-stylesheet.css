@@ -1,6 +1,7 @@
 *{
   color:#000080;
   background-color:  #ffffff ;
+  font-size: 1em;
 }
 
 a {
@@ -10,3 +11,71 @@ a {
 a:visited {
     color: #ff0000;
 }
+div {
+	display: inline-block;
+	
+}
+div.left {
+	float: left;
+}
+div.right {
+	float: right;
+}
+li p {
+	font-size: .5em;
+}
+header { font-weight: bold;
+		 text-align: center;
+         /*margin-bottom: 2px;*/
+}
+.huge{
+	font-size: 1.5em;
+}
+.normal{
+	font-size: .75em;
+}
+header h1 {
+  font-size: 1.5em;
+}
+
+header h2 {
+  font-size: 1.25em;
+}
+.break{
+	height:1px;
+	width:100%;
+	border: 1px solid black;
+}
+.geico{
+	text-align:center;
+	clear:both;
+	font-size:.6em;
+}
+.smallish {
+	font-size:.6em;
+}
+.small {
+	font-size:.5em;
+}
+.bold {
+	font-weight: bold
+}
+/*What is important to know when linking an external file (like a stylesheet) to an HTML file?
+Having the correct relative file path took awhile to do. You have to make sure the files are linked otherwise nothing will happen to the HTML file.
+The template of <link type="text/css" rel="stylesheet" href="LINK"/> is important to remember as well.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+Fooling around with text size, colors and fonts were relatively easy. Moving stuff around was a pain in the butt and I need a lot more pratice in that regard. Some tricks I used
+were inline blocks and float to help me put stuff where I wanted it to be.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+I used em as a measurement of font-size, color element, border, display,text-align, font-weight, and float.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+I used classes mostly to define my elements just in case I would need use of that element in the future.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+I feel like the base code was much harder to read and understand, but that could also be partially due to my inexperience with this language. Using a seperate CSS stylesheet
+seems to make the content more clean and easily readable. I'm not sure what the best practices are but I believe more and more developers are using this system nowadays.
+
+*/
