@@ -1,12 +1,12 @@
-![Step1](/chrome-devtools/imgs/Step1.png)
-![Step2](/chrome-devtools/imgs/Step2.png)
-![Step3](/chrome-devtools/imgs/Step3.png)
-![Step4](/chrome-devtools/imgs/Step4.png)
-![Step5](/chrome-devtools/imgs/Step5.png)
-![Step6](/chrome-devtools/imgs/Step6.png)
-![Step7](/chrome-devtools/imgs/Step7.png)
-![Step8](/chrome-devtools/imgs/Step8.png)
-![Step9](/chrome-devtools/imgs/Step9.png)
+![Step1](phase0/week-3/chrome-devtools/imgs/Step1.PNG)
+![Step2](phase0/week-3/chrome-devtools/imgs/Step2.PNG)
+![Step3](phase0/week-3/chrome-devtools/imgs/Step3.PNG)
+![Step4](phase0/week-3/chrome-devtools/imgs/Step4.PNG)
+![Step5](phase0/week-3/chrome-devtools/imgs/Step5.PNG)
+![Step6](phase0/week-3/chrome-devtools/imgs/Step6.PNG)
+![Step7](phase0/week-3/chrome-devtools/imgs/Step7.PNG)
+![Step8](phase0/week-3/chrome-devtools/imgs/Step8.PNG)
+![Step9](phase0/week-3/chrome-devtools/imgs/Step9.PNG)
 
 How can you use Chrome's DevTools inspector to help you format or position elements?
 
