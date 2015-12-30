@@ -31,3 +31,9 @@ Variables are a name given to strings so that they are more easily manipulated.
 
 #How was this challenge? Did you get a good review of some of the basics?
 This challenge was a great review of some of the work we did before the interview. It's nice to be able to work with some comfort after a few weeks of being completely new to the content.
+
+[Defining Variable](https://github.com/Petey101/phase0/blob/master/week-4/defining-variables.rb)
+
+[Simple String](https://github.com/Petey101/phase0/blob/master/week-4/simple-string.rb)
+
+[Basic Math](https://github.com/Petey101/phase0/blob/master/week-4/basic-math.rb)
