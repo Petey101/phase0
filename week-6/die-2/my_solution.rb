@@ -6,11 +6,13 @@
 
 # Pseudocode
 
-# Input:
-# Output:
-# Steps:
-
-
+# Input: Array
+# Output:Random Element of the Array when roll method is called.
+# Steps: create an instance variables for use throughout all the methods
+#        Raise argument error if the array is empty
+#        define method sides which will return the number of sides of the die
+#        define a method roll which will return a random element of the array
+#        (I will use the same skeleton as my previously created die class)
 # Initial Solution
 
 class Die
