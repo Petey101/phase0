@@ -66,5 +66,4 @@ I learned that you can access values in hashes by calling upon their keys.
 What concepts were solidified when working through this challenge?
 Accessing values by calling upon keys was solidified in this challenge. I believe that my refactoring has gotten a little better as well after this challenge.
 
-
 =end
