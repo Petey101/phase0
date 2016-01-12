@@ -19,7 +19,11 @@ def acct_groups(students)
     p students.each_slice(4).to_a
   elsif 
   students.length % 5 == 3
-   p students.each_slice(5).to_a
+    p students.each_slice(5).to_a
+  elsif
+    students.length % 5 == 2
+    p students[1..-9].each_slice(4).to_a
+    p students[-9..-1].each_slice(3).to_a
   else
     p students.each_slice(3).to_a
   end
