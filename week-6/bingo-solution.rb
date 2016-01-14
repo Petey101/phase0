@@ -264,7 +264,7 @@ If the variable needed to be used in other methods, it would save time and energ
 
 
 What do you feel is most improved in your refactored solution?
-I feel like check it my most refactored solution because of how much simpler it became.
+I feel like check because is my most improved because of how much simpler it became.
 
   
 =end
