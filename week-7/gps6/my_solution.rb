@@ -4,61 +4,61 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
-require_relative 'state_data'
+# Require imports gems into a ruby file (require uses direct paths). 
+# Require_relative links files that are in the same folder
+# require_relative 'state_data'
 
 class VirusPredictor
+  
+  def initialize(state)
+    @state = state
+    @population = STATE_DATA[state][:population]
+    @population_density = STATE_DATA[state][:population_density]
+  end  
 
-  def initialize(state_of_origin, population_density, population)
-    @state = state_of_origin
-    @population = population
-    @population_density = population_density
-  end
-
+  #returns the output of predicted_deaths method and speed_of_spread method  
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    print "#{@state} will lose #{predicted_deaths} people in this outbreak and will spread across the state in #{months_to_spread} months.\n\n"
   end
 
   private
 
-  def predicted_deaths(population_density, population, state)
+  #returns the number of predicted deaths relative to the population density of the given state.
+  def predicted_deaths
     # predicted deaths is solely based on population density
+    
     if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
+      (0.4*@population).floor
     elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
+      (0.3*@population).floor
     elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
+      (0.2*@population).floor
     elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
+      (0.1*@population).floor
     else
-      number_of_deaths = (@population * 0.05).floor
+      (0.05*@population).floor
     end
 
-    print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
-
-  def speed_of_spread(population_density, state) #in months
+  
+  #returns the number of months it would take for the virus to spread across the state
+  def months_to_spread #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
-    speed = 0.0
 
     if @population_density >= 200
-      speed += 0.5
+      0.5
     elsif @population_density >= 150
-      speed += 1
+      1
     elsif @population_density >= 100
-      speed += 1.5
+      1.5
     elsif @population_density >= 50
-      speed += 2
+      2
     else
-      speed += 2.5
+      2.5
     end
 
-    puts " and will spread across the state in #{speed} months.\n\n"
 
   end
 
@@ -68,6 +68,17 @@ end
 
 # DRIVER CODE
  # initialize VirusPredictor for each state
+
+#PSEUDOCODE
+=begin
+1) Take the US state array and iterate over each state-level item
+2) Run the class for each state
+
+=end
+
+# "Alabama" => {population_density: 94.65, population: 4822023}
+
+#STATE_DATA.each { |state, data| VirusPredictor.new(state).virus_effects }
 
 
 alabama = VirusPredictor.new("Alabama", STATE_DATA["Alabama"][:population_density], STATE_DATA["Alabama"][:population])
@@ -85,3 +96,22 @@ alaska.virus_effects
 
 #=======================================================================
 # Reflection Section
+=begin
+
+What are the differences between the two different hash syntaxes shown in the state_data file?
+One is a normal hash and the other is a symbol hash. Symbol hashes will save run time when run because the symbols all have the same ID.
+
+What does require_relative do? How is it different from require?
+"require_relative" links to a file in the same directory and can pull data from it. "require" links to a file but a path must be given for it to find the file.
+
+What are some ways to iterate through a hash?
+You can use each_key to iterate over each key or each_pair to iterate over the key and value at the same time.
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+They were not needed in the methods being called.
+
+What concept did you most solidify in this challenge?
+I understand how classes work much better now. I also understand the use of the method private in classes. My refactoring and pseudocoding has become slightly better as well.
+
+
+=end
