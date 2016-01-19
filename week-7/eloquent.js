@@ -16,6 +16,8 @@ for (var hashtag = "#"; hashtag.length <= 7; hashtag += "#")
 
 // Functions
 
+prompt("Whats your favorite food?", "..."); alert("That's my Favorite too!");
+
 // Complete the `minimum` exercise.
 var min = function(x,y) {
     if (x > y)
