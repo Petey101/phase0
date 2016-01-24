@@ -19,43 +19,38 @@
 
 // Initial Code
 
-var hero = { 
-  attack: function() { 
-    damage.roll
-    if (monster.health >= damage.roll){
-      monster.health = monster.health - damage.roll; 
-      if (monster.health <= 0){
-        monster.dies(); 
-      }
-      else{
-      console.log("Monster is still alive! Attack again!");
-      }
-    }
-    else{
-      monster.health = monster.health - damage.roll;
-      if (monster.health <= 0){
-        monster.dies();
-      }
-    }
+// var hero = { 
+//   attack: function() { 
+//     damage.roll
+//     if (monster.health >= damage.roll){
+//       monster.health = monster.health - damage.roll; 
+//       if (monster.health <= 0){
+//         monster.dies(); 
+//       }
+//       else{
+//       console.log("Monster is still alive! Attack again!");
+//       }
+//     }
+//     else{
+//       monster.health = monster.health - damage.roll;
+//       if (monster.health <= 0){
+//         monster.dies();
+//       }
+//     }
 
-  }
-};
+//   }
+// };
 
-var damage = { 
-  roll: Math.floor((Math.random()*10)+1)
-};
+// var damage = { 
+//   roll: Math.floor((Math.random()*10)+1)
+// };
 
-var monster = { 
-  health: 10,
-  dies: function() {
-    console.log("The monster is slain!")
-  }
-};
-
-
-
-
-
+// var monster = { 
+//   health: 10,
+//   dies: function() {
+//     console.log("The monster is slain!")
+//   }
+// };
 
 // Refactored Code
 var turns = {
