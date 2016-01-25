@@ -6,3 +6,6 @@ I want the functions to be named sum, mean, and median respectively.
 Remember that the length of these numbers may be of varying sizes so take that in mind.
 This last point will affect the median function mostly.
 */
+
+/* After running the tests, we failed on tests 7 and 9. Test 7 failed because median became medium somewhere along the line.
+Test 9 failed because the even number array's should have been 5.5 but it was returning 4.
