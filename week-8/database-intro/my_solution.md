@@ -21,14 +21,18 @@
 Reflection
 
 What are databases for?
+
 Databases are used to store large amounts of information. They should be easy to use and access.
 
 What is a one-to-many relationship?
+
 A one-to-many relationship is when a table can be refrenced multiple times by another. An example would be a table with people and another table with outfits. One person can have multiple outfits, making the table with people the one and the outfits the many.
 
 What is a primary key? What is a foreign key? How can you determine which is which?
+
 A primary key is a unique value that each table has for its many elements. A foreign key links to the primary key of another table. Foreign keys do not have to be unique.
 
 How can you select information out of a SQL database? What are some general guidelines for that?
+
 Using certain keywords allows you to select information out of a SQL database.
 SELECT lets the console know what you want. FROM lets the console know from where. Those are the two important ones with other keywords such as ORDER BY, to choose how you want to display the database and BETWEEN to only take certain values to return.
