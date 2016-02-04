@@ -11,36 +11,36 @@ attr_reader :contents
 
 # Are there any more methods needed in this class?
 
-def initialize
-@contents = []
-@open = true
-end
+  def initialize
+    @contents = []
+    @open = true
+  end
 
-def open
-@open = true
-end
+  def open
+    @open = true
+  end
 
-def close
-@open = false
-end
+  def close
+    @open = false
+  end
 
-def add_item(item)
-@contents << item
-end
+  def add_item(item)
+    @contents << item
+  end
 
-def remove_item(item = @contents.pop) #what is `#pop` doing? (targeting the last item)
-@contents.delete(item)
-end
+  def remove_item(item = @contents.pop) #what is `#pop` doing? (targeting the last item)
+    @contents.delete(item)
+  end
 
-def dump  # what should this method return?
-puts "Your drawer is empty."
-  @contents = []
-end
+  def dump  # what should this method return?
+    puts "Your drawer is empty."
+      @contents = []
+  end
 
-def view_contents
-puts "The drawer contains:"
-@contents.each {|silverware| puts "- " + silverware.type }
-end
+  def view_contents
+    puts "The drawer contains:"
+    @contents.each {|silverware| puts "- " + silverware.type }
+  end
 
 end
 
@@ -49,23 +49,23 @@ attr_reader :type
 
 # Are there any more methods needed in this class?
 
-def initialize(type, clean = true)
-@type = type
-@clean = clean
-end
+  def initialize(type, clean = true)
+    @type = type
+    @clean = clean
+  end
 
-def eat
-puts "eating with the #{type}"
-@clean = false
-end
+  def eat
+    puts "eating with the #{type}"
+    @clean = false
+  end
   
-def clean_silverware
-  @clean = true
-end
+  def clean_silverware
+    @clean = true
+  end
   
-def clean
-  @clean = false
-end
+  def clean
+    @clean = false
+  end
 
 end
 
